@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="botones">
+
+            <button id = "nuevoUsuario">nuevo usuario</button>
+            <button id = "mostrarTodos">mostrar todos</button>
+            
+        </div>
+
+        <p>Actividad 6</p>
+
+        <div class="ID">
+
+            <input type="text" placeholder="Introducir ID" id = "usuarioID"><button id = "buscarID">buscar por ID</button>
+
+        </div>
+
+    </header>
+    
+    <div class = "contenedor">
+
+        <div class="cartas">
+
+            <div class = "cartaUsuario">
+                <p>ID:1</p>
+                <p>Bruno Fandiño</p>
+                <p>147852369</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal">
+        <div class="contenidoModal">
+            <h2>Rellena la ficha para el nuevo usuario</h2>
+            <form id="form">
+                <label for = "nombre">Nombre:</label>
+                <input type = "text" id="nombre" name="name" required>
+
+                <label for = "apellido">Apellido:</label>
+                <input type="text" id="apellido" name="surname" required>
+
+                <label for="tlf">Telefono:</label>
+                <input type="tel" id="tlf" name="phone" required>
+
+                <button type="submit">Aceptar</button>
+                <button type="button" id="cancelar">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

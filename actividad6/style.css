@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    background-color: rgb(248, 209, 135);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(136, 136, 240);
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botones button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botones button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.botones button:active {
+    background-color: #004080;
+    transform: scale(0.95);
+}
+
+.ID {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ID input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.ID button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.ID button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.ID button:active {
+    background-color: #1e7e34;
+    transform: scale(0.95);
+}
+
+.cartaUsuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    background-color: white;
+    margin-top: 2%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    font-size: 16px;
+}
+
+.cartas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenidoModal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.contenidoModal h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.contenidoModal label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contenidoModal input {
+    width: 92%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contenidoModal button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contenidoModal button:hover {
+    background-color: #0056b3;
+}
+
+.contenidoModal button:active {
+    background-color: #013f7c;
+}
+
+#cancelar {
+    background-color: #dc3545;
+}
+
+#cancelar:hover {
+    background-color: #c82333;
+}
+
+#cancelar:active {
+    background-color: #bd2130;
+}
+
+#mensajeError {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 20px;
+}
